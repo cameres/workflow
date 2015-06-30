@@ -24,6 +24,5 @@
   - Delete local branch + origin branch
     - Delete remote branch : `$ git push <remote> :<branch>`
     - Delete local branch : `$ git branch -d <branch>`
-  - Keep branch alive (ex: hot-fix)
-    - Must update hot-fix on changes
+  - Keep branch alive
     - branch should stay up to date with master
