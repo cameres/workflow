@@ -1,17 +1,18 @@
 # Connor's Workflow for Git/Github Projects
+- Using robbyrussel's git plugin
 1. Open new branch
-  - `$ git branch <new-branch>`
+  - `$ gb <new-branch>`
 2. Move to new branch
-  - `$ git checkout <new-branch>`
+  - `$ gco <new-branch>`
 3. Connect new branch to origin
-  - `$ git push --set-upstream <remote> <branch>`
+  - `$ ggsup <remote> <branch>`
 4. Commit/Work on code
   - create(if necessary)/run tests
   - code
   - run tests
-  - `$ git commit ... `
+  - `$ gcmsg ... `
 5. Push code from branch
-  - `$ git push ... `
+  - `$ gp ... `
   - *see step 3 if feature is not complete*
 6. Create pull request
   - `$ hub pull-request ...`
@@ -19,12 +20,12 @@
 7. Merge pull request
   - `$ hub browse`
   - via browser
-8. Create tag in master branch
-  - `$ git tag <release>`
-  - `$ git push --tags`
+8. Create a signed tag in master branch
+  - `$ gts -m <note> <release>`
+  - `$ gp --tags`
 9. Either of the following:
   - Delete local branch + origin branch
-    - Delete remote branch : `$ git push <remote> :<branch>`
-    - Delete local branch : `$ git branch -d <branch>`
+    - Delete remote branch : `$ gp <remote> :<branch>`
+    - Merge branch and delete : `$ gbda <branch>`
   - Keep branch alive
     - branch should stay up to date with master
